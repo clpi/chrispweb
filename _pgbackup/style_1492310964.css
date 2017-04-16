@@ -1,0 +1,20 @@
+
+
+body
+{
+    background-color: #fbf2f5;
+    color: #43234a;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1
+{
+    letter-spacing: 8px;
+    text-align: left;
+    text-transform: lowercase;
+    margin-left: 0px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
