@@ -27,8 +27,8 @@ h1
 #portrait
 {
     margin-top: 15px;
-    margin: 0 auto;
-    display: block;
+    margin-bottom: 15px;
+    border-radius: 3px;
 }
 
 button
@@ -45,7 +45,6 @@ h3
 p
 {
     letter-spacing: 0.5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-
 

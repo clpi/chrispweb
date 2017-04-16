@@ -31,6 +31,7 @@ h1
     display: block;
 }
 
+
 button
 {
     min-width: 100%;
@@ -45,7 +46,6 @@ h3
 p
 {
     letter-spacing: 0.5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
-
 
