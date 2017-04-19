@@ -4375,6 +4375,7 @@ select[multiple].input-lg
 .btn.focus
 {
     color: #43234a;
+    text-decoration: none;
     transition: 0.1s;
 }
 
