@@ -6,7 +6,6 @@ body
     color: #43234a;
     padding-left: 10%;
     padding-right: 10%;
-    font-family: helvetica;
 }
 
 h1
@@ -24,7 +23,6 @@ h1
     background-color: rgba(211, 177, 209, 0.3);
     border-radius: 2px;
     padding-bottom: 20px;
-    line-height: 25px;
 }
 
 #portrait
@@ -33,11 +31,9 @@ h1
     margin-top: 20px;
 }
 
-
 button
 {
     min-width: 100%;
-    margin-top: 15px;
 }
 
 h3
