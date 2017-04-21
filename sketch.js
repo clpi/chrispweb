@@ -1,7 +1,7 @@
 var x;
 var y;
 function setup(){
-  var canvas = createCanvas(1500,800);
+  var canvas = createCanvas(1500,700);
   canvas.parent("container");
   background(40);
 }
