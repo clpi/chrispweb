@@ -1,14 +1,8 @@
 <!DOCTYPE html>
-
-<!--
-  Stuart Powers
-  http://sente.cc/
-  http://twitter.com/stuartpowers
--->
-
 <html>
   <head>
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <meta charset="utf-8">
@@ -29,28 +23,23 @@
         </div>
     </div>
     <div class="row" id="content"  style="padding: 30px 20% 30px 20%">
-
+      <div id = "quote" style="height:150px">
+      </div>
+      <hr>
+      <div class="col-sm-6" style="display: block" id="newquote">
+        <button type="button" class="btn btn-default" onclick="getQuote()"><span class = "glyphicon glyphicon-refresh"></span> new quote</button>
+      </div>
+      <div class="col-sm-6" style="display: block">
+        <button type="button" class="btn btn-default" onclick="tweet()"><i class="fa fa-twitter"></i> tweet</button>
     </div>
+  </div>
     <div class="row">
         <p id="footer-text">Chris Pecunies 2017</p>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-
-    <script>
-      $.getJSON("http://www.reddit.com/r/showerthoughts/top.json?jsonp=",
-        function foo(data) {
-           $.each(
-            data.data.children.slice(0, 100),
-            function (i,post) {
-              $("#content").append( '<span style = "font-size: 20px"><br>"' + post.data.title
-              + '"</span><br><br><em> - ' + post.data.author + '</em> <hr>');
-            }
-          )
-        }
-      );
-    </script>
-
+    <script src="libraries/p5.js"></script>
+    <script src="quote.js"></script>
   </body>
 </html>
