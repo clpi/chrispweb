@@ -6,9 +6,11 @@ function setup() {
   var canvas = createCanvas(document.getElementById("container").clientWidth, window.innerHeight-250);
   canvas.parent("container");
 }
-function mousePressed() {
-  var p = new Particle(mouseX, mouseY, random(0.5,1), random(4,7));
-  particles.push(p);
+function mouseDragged() {
+  if(frameCount%10 == 0){
+    var p = new Particle(mouseX, mouseY, random(0.5,1), random(4,7));
+    particles.push(p);
+  }
 }
 function keyPressed() {
   if (key == ' ') {
