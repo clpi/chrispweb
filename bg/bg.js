@@ -21,8 +21,8 @@ function setup(){
 function draw(){
   clear();
   //debugging
-  text(mouseX, mouseX, mouseY-20);
-  text(mouseY, mouseX, mouseY);
+  //text(mouseX, mouseX, mouseY-20);
+  //text(mouseY, mouseX, mouseY);
 
   for(var i=0;i<particles.length;i++){
     var gravity = createVector(random(-0.01,0.01),random(-0.01,0.01));
