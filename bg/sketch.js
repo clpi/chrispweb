@@ -2,7 +2,7 @@ var drops = [];
 var numberOfDrops = 150;
 
 function setup(){
-  canvas = createCanvas(window.innerWidth,window.innerHeight);
+  canvas = createCanvas(window.innerWidth,Math.max(document.body.clientHeight, window.innerHeight));
   imageMode(CORNER);
   canvas.position(0,0);
   for(var i = 0; i<numberOfDrops; i++){
@@ -18,5 +18,5 @@ function draw(){
   }
 }
 function windowResized() {
-  resizeCanvas(window.innerWidth,window.innerHeight);
+  resizeCanvas(window.innerWidth,Math.max(document.body.clientHeight, window.innerHeight));
 }
