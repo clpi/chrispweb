@@ -1,5 +1,5 @@
 var drops = [];
-var numberOfDrops = 150;
+var numberOfDrops = 1000;
 
 function setup(){
   canvas = createCanvas(window.innerWidth,Math.max(document.body.clientHeight, window.innerHeight));
